@@ -1,0 +1,359 @@
+[List Interview question based on interaction of NodeJS Developer
+
+ 
+
+1. What are some best practices for CI/CD when working with Node.js applications?
+
+2. How would you use JWT (JSON Web Tokens) for stateless authentication?
+
+3. What are some strategies for securing API routes in a Node.js/Express application?
+
+4. What is middleware in Node.js?
+
+5. Buffer vs Streams
+
+6. Type of streams in NodeJS
+
+7. How does the worker_threads module differ from the cluster module, and when would you use one over the other?
+
+8. How would you implement a secure API in Node.js? What best practices would you follow for authentication, authorization.
+
+9. What are common security vulnerabilities in Node.js applications, and how would you mitigate them (e.g., SQL Injection, XSS, CSRF)?
+
+10. Can you explain the difference between readable and writable streams in Node.js?
+
+11. In Node.js, what is the best practice for error handling in asynchronous code?
+
+12. How node js handle large volumn of data?
+
+13. Type of middleware in Node.js
+
+14 package.json vs package.lock.json
+
+15. Explain how Node.js handles asynchronous operations using the event loop and callback functions.
+
+16. What are some of the core modules in Node.js?
+
+17. What is npm in Node.js?
+
+18. Describe the fs module and how to use it to interact with the file system (e.g., reading, writing files).
+
+19. What is a package manager in Node.js, and what are some commonly used ones?
+
+20. Discuss npm (Node Package Manager) and Yarn, and explain their role in managing dependencies in a Node.js project.
+
+21. How would you create a simple HTTP server in Node.js?
+
+22. Can you explain the role of npm in managing dependencies in Node.js? What strategies do you use to ensure that dependencies are up-to-date and secure?
+
+23. Strategies for Handling Asynchronous Operations
+
+24. Describe what a callback function is and how it is used in asynchronous operations.
+
+25. What is the difference between process.nextTick(), setImmediate(), and setTimeout() in Node.js?
+
+27. Write a basic example of using the http module to create a simple web server.
+
+28. What is the use of async and await in Node.js?
+
+29. What is the difference between synchronous and asynchronous programming?
+
+30. Write a basic example of using the http module to create a simple web server.
+
+31. What is the use of async and await in Node.js?
+
+32. What is the difference between synchronous and asynchronous programming?
+
+33. Write a basic example of using the http module to create a simple web server.
+
+34. What is the use of async and await in Node.js?
+
+35. How to secure Rest API?
+
+36. How does Node.js handle uncaught exceptions and unhandled promise rejections?
+
+37. What are some considerations when implementing caching in a distributed system?
+
+38. How would you optimize a Node.js application for performance?
+
+39. What is the importance of the v8 module in Node.js?
+
+40. Can you explain how Node.js uses the V8 engine for compiling JavaScript code?
+
+41. Explain the use of the Buffer class in Node.js.
+
+42. How does this improve performance and scalability?
+
+43. What is the difference between fs.readFileSync() and fs.readFile()?
+
+44. When should you use the synchronous and asynchronous versions of the fs module functions in real-world applications?
+
+45. What strategies do you use for scaling Node.js applications?
+
+46. How would you deploy a Node.js application to a cloud platform like AWS or Google Cloud?
+
+47. What are the limitations or challenges of using ES Modules in Node.js, and how can they be resolved?
+
+48. Can you provide an example of how it helps in debugging or profiling Node.js applications?
+
+49. What are the advantages of using Node.js?
+
+50. Step to create package
+
+51. How does Buffer handle binary data in Node.js, and what are some common use cases?
+
+52. What is the Node.js cluster module, and how does it help in scaling Node.js applications?
+
+53. Can you explain the concept of event-driven architecture in Node.js and how it can be used to build scalable applications?
+
+54. What are some potential pitfalls with handling buffers in Node.js?
+
+55. What is yarn and how does it differ from npm?
+
+56. What is the difference between require and import in Node.js?
+
+57. How to improve node js performance?
+
+58. How do you use tools like Redis or in-memory caching to optimize performance?
+
+59. What are Streams in Node.js?
+
+60. Explain the different types of streams (Readable, Writable, Duplex, and Transform).
+
+61. How does Node.js handle concurrency?
+
+62. What is the purpose of middleware in Express.js?
+
+63. Can you explain how middleware functions work in the request-response cycle of an Express application?
+
+64. What are WebSockets, and how are they different from traditional HTTP requests?
+
+65. How would you implement real-time communication using WebSockets in a Node.js application?
+
+66. What are memory leaks in Node.js, and how can you detect them?
+
+67. What is the difference between process.nextTick(), setImmediate(), and setTimeout() in terms of the event loop and execution order?
+
+68. Explain the concept of "CORS" (Cross-Origin Resource Sharing) in Node.js.
+
+69. How do you implement CORS in Node.js and Express?
+
+70. What are the different types of child processes in Node.js?
+
+71. Define promises and how they are used for handling asynchronous code more cleanly compared to callbacks.
+
+72. How do you handle database connection pooling in Node.js for performance optimization?
+
+73. What are the differences between concurrency and parallelism in the context of Node.js? How can you achieve parallelism with Node.js?
+
+74. Discuss how Node.js uses the event loop and non-blocking I/O to handle multiple requests concurrently without using threads.
+
+75.  What are circuit breakers, and why are they needed?
+
+76. What are some implementations of circuit breakers?
+
+77, What is service discovery? Why is it needed in a microservice architecture?
+
+78. What is a SPOF?,  What are some common strategies for avoiding SPOFs?
+
+79. : Name some common tools used in building microservice architectures.
+
+Docker: A container framework used to deploy microservices
+Kubernetes: An orchestration framework used to manage your Docker containers
+Spring Boot: Provides a rapid development framework for microservices
+Istio: A service mesh used with Kubernetes to provide detailed monitoring of the interactions between microservices
+Prometheus: A monitoring system that scrapes metrics from a cluster
+Grafana: A graphing tool that displays metrics in a graph form
+ElasticSearch: A search engine used in clusters to gather logs
+Kibana: A UI for inspecting logs
+80. Explain the workings of Java Microservices Architecture.
+
+81. Event-Driven Programming Paradigm in Node.js
+
+82. Non-Blocking I/O in Node.js
+
+83. Clustering in Node.js
+
+84. Handling Child Processes in Node.js
+
+85. Scaling a Node.js Application for High Traffic Loads
+
+86.  Implementing Authentication and Authorization in a Node.js Microservices Architecture
+
+87. Implementing Real-Time Communication between Clients and Servers in Node.js
+
+88. Security Vulnerabilities in Node.js Applications and Mitigation
+
+Injection Attacks: Protect against SQL injection, NoSQL injection, and command injection by using parameterized queries and input validation.
+Cross-Site Scripting (XSS): Sanitize user input and escape output to prevent XSS attacks.
+Cross-Site Request Forgery (CSRF): Implement CSRF tokens and ensure that sensitive operations require user authentication.
+Denial of Service (DoS): Implement rate limiting, request validation, and proper error handling to mitigate DoS attacks.
+89. What is middleware in the context of Express.js? How is it used?
+
+90. Explain the concept of streams in Node.js. When would you use them?
+
+91. What are some security best practices when developing a Node.js application?
+
+92.  What is the role of the process object in Node.js? Give examples of its usage.
+
+93. What is session management in Express.js? How can it be implemented?
+
+94. How do you handle file uploads in an Express.js application?
+
+95. How do you handle CORS (Cross-Origin Resource Sharing) in a Node.js application?
+
+96. Explain the purpose of the express.static() middleware in Express.js.
+
+97. How do you handle sessions and cookies in an Express.js application?
+
+98. Event-Driven Programming Paradigm in Node.js
+
+99. Name the key components of Microservices.
+
+Name the key components of Microservices.
+
+Containers, Clustering, and Orchestration
+IaC [Infrastructure as Code Conception]
+Cloud Infrastructure
+API Gateway
+Enterprise Service Bus
+Service Delivery
+100. Why is Node.js Single-threaded?
+
+Node.js is single-threaded for async processing. By doing async processing on a single-thread under typical web loads, more performance and scalability can be achieved instead of the typical thread-based implementation.
+
+101.  If Node.js is single-threaded, then how does it handle concurrency?
+
+The Multi-Threaded Request/Response Stateless Model is not followed by the Node JS Platform, and it adheres to the Single-Threaded Event Loop Model. The Node JS Processing paradigm is heavily influenced by the JavaScript Event-based model and the JavaScript callback system. As a result, Node.js can easily manage more concurrent client requests. The event loop is the processing model's beating heart in Node.js
+
+102. What is an EventEmitter in Node.js?
+
+EventEmitter is a class that holds all the objects that can emit events
+Whenever an object from the EventEmitter class throws an event, all attached functions are called upon synchronously
+103. What are the two types of API functions in Node.js?
+
+The two types of API functions in Node.js are:
+
+Asynchronous, non-blocking functions
+Synchronous, blocking functions
+104. What are the security implementations that are present in Node.js?
+
+One of the most important security features in Node.js is the ability to run code in a restricted environment. This is achieved through the use of a sandboxed environment, which can help prevent malicious code from accessing sensitive data or causing any damage to the system.
+
+Another important security feature in Node.js is using TLS/SSL to encrypt data in transit. This can help to prevent eavesdropping and ensure that sensitive data is protected.
+
+105. What is Libuv?
+
+Libuv is a critical component of Node.js, making it possible to handle I/O operations in a non-blocking and efficient manner.
+
+106. What is the use of the connect module in Node.js?
+
+The Connect module can be used to handle different types of middleware, such as error-handling middleware, cookie-parsing middleware, and session middleware. Error-handling middleware is used to handle errors that occur during the request/response cycle. Cookie parsing middleware is used to parse cookies from the request header. Session middleware is used to manage user sessions.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
