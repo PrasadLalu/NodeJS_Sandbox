@@ -13,7 +13,7 @@
       socket.on('users-list', users => {
         const userList = document.getElementById('userList')
         userList.innerHTML = ''
-        console.log(users)
+        // console.log(users)
         users.forEach(user => {
           const li = document.createElement('li')
           li.textContent = user.name

@@ -21,12 +21,11 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 const server = http.createServer(app)
 const io = new Server(server)
-const { users } = socketHandler(io)
+socketHandler(io)
 
 // Make io and users available in routes
 app.use((req, res, next) => {
   req.io = io
-  req.users = users
   next()
 })
 
