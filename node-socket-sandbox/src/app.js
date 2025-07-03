@@ -1,18 +1,36 @@
-const express = require('express')
+require('dotenv').config()
 const http = require('http')
-const { Server } = require('socket.io')
 const path = require('path')
+const express = require('express')
+const { Server } = require('socket.io')
+const apiRoutes = require('./routes')
 const socketHandler = require('./server/socket')
 
 const app = express()
-const server = http.createServer(app)
-const io = new Server(server)
 
-// Serve static files
+// database connect
+const connectDB = require('./config/database')
+connectDB()
+
+// body parser
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
+
+// serve static file
 app.use(express.static(path.join(__dirname, 'public')))
 
-// Attach socket events
-socketHandler(io)
+const server = http.createServer(app)
+const io = new Server(server)
+const { users } = socketHandler(io)
+
+// Make io and users available in routes
+app.use((req, res, next) => {
+  req.io = io
+  req.users = users
+  next()
+})
+
+app.use('/', apiRoutes)
 
 const PORT = 3000
 server.listen(PORT, () => {

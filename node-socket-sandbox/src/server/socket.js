@@ -1,14 +1,15 @@
+let users = []
+
 module.exports = function (io) {
   io.on('connection', socket => {
-    console.log('User connected:', socket.id)
-
-    socket.on('chat-message', msg => {
-      console.log('Message:', msg)
-      io.emit('chat-message', msg)
-    })
+    console.log('Socket connected:', socket.id)
+    socket.emit('users-list', users)
 
     socket.on('disconnect', () => {
-      console.log('User disconnected:', socket.id)
+      users = users.filter(u => u.id !== socket.id)
+      io.emit('users-list', users)
     })
   })
+
+  return { users }
 }
